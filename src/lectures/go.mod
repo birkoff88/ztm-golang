@@ -1,6 +1,6 @@
-module coursecontent
+module ztm-golang
 
-go 1.25
+go 1.26
 
 require (
 	github.com/chai2010/webp v1.4.0
