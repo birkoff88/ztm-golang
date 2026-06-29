@@ -22,6 +22,24 @@
 
 package main
 
-func main() {
-}
+import "fmt"
 
+func main() {
+
+	var favoriteColor = "blue"
+	fmt.Println("My favorite color is", favoriteColor)
+
+	birthYear, age := 1988, 37
+	fmt.Println("My Birth year is", birthYear)
+
+	var (
+		firstInitial = "B"
+		lastInitial  = "P"
+	)
+	fmt.Println("My initials are", firstInitial, lastInitial)
+
+	var ageInDays int
+	ageInDays = age * 365
+	fmt.Println("My age in days is", ageInDays)
+
+}
