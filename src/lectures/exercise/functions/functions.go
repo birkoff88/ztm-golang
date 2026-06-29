@@ -17,7 +17,33 @@
 
 package main
 
-func main() {
+import "fmt"
 
+func name(name string) {
+	fmt.Println("Hello,", name)
 }
 
+func hiThere() string {
+	return "Hi there"
+}
+
+func twoTwos() (int, int) {
+	return 2, 2
+}
+
+func anyNum() int {
+	return 5
+}
+
+func threeNumbers(n1, n2, n3 int) int {
+	return n1 + n2 + n3
+}
+
+func main() {
+	name("Boris")
+	fmt.Println(hiThere())
+	a, b := twoTwos()
+	answer := threeNumbers(anyNum(), a, b)
+	fmt.Println(answer)
+
+}
